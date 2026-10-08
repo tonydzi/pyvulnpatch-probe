@@ -1,0 +1,11 @@
+vuln_id,repo_url,fix_commit
+CVE-2025-62727,https://github.com/Kludex/starlette,4ea6e22b489ec388d6004cfbca52dd5b147127c5
+CVE-2025-62708,https://github.com/py-pdf/pypdf,e51d07807ffcdaf18077b9486dadb3dc05b368da
+CVE-2025-62800,https://github.com/jlowin/fastmcp,2a20f54617a37213ed83894a8c2f0ac38a2e83a3
+CVE-2025-61920,https://github.com/authlib/authlib,867e3f87b072347a1ae9cf6983cc8bbf88447e5e
+CVE-2025-61765,https://github.com/miguelgrinberg/python-socketio,53f6be094257ed81476b0e212c8cddd6d06ca39a
+CVE-2025-59940,https://github.com/mondeja/mkdocs-include-markdown-plugin,7466d67aa0de8ffbc427204ad2475fed07678915
+CVE-2025-58438,https://github.com/jjjake/internetarchive,cba2d459e10a9489fb35caeba0b03e80f5f5d7c2
+CVE-2025-58180,https://github.com/OctoPrint/OctoPrint,be4201ef58d9a7c03593252398c16eada90a258b
+CVE-2025-57804,https://github.com/python-hyper/h2,035e9899f95e3709af098f578bfc3cd302298e3a
+CVE-2025-54886,https://github.com/skops-dev/skops,29d61ea8a92f2bde6830e8f32cc72a1a87211cda
