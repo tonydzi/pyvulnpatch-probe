@@ -119,10 +119,23 @@ Every number in this README came out of the code in this repo.
 
 **Built and tested but not yet run against a live agent**: the hint-ablation
 prompt conditions (`probe/ablate.py`) and the self-report scorer
-(`probe/score.py`). Running those three conditions × N cases means paid model
-calls, which is a spending decision that has not been made. Until it is, this
-repo reports no solve rate and no false-success rate — the scorers are verified
-against synthetic patches only.
+(`probe/score.py`). Until that run happens this repo reports **no solve rate and
+no false-success rate** — the scorers are verified against synthetic patches
+only, and you should not cite a rate from here.
+
+What such a run costs, grounded in Vul4Py's own Table 2 (mean API spend per
+instance on a Claude Sonnet 4 backbone: OpenHands $1.32, SWE-agent $1.43, direct
+prompting $0.03–0.05):
+
+| scope | runs | expected | hard ceiling with a per-case cap |
+|---|---|---|---|
+| smoke test, 3 cases × 3 conditions | 9 | ≈$12 | $27 at $3/case |
+| minimum real measurement, 10 × 3 | 30 | ≈$40 | $45 at $1.50/case |
+| publishable, 30 × 3 | 90 | ≈$119 | $135 at $1.50/case |
+
+The direct-prompting arm is ~30× cheaper but scores 4–5/100 upstream, so an
+ablation delta measured there sits on the floor and is noise. The number only
+means something on an agentic backbone.
 
 **Not done**: perturbation-based contamination measurement (the replacement for
 measurement 2 suggested above), open-weight backbones, languages other than
@@ -151,7 +164,11 @@ GitHub slug parser forbade dots, so `changedetection.io` became
 commit" until the slug was printed. Both the fix and a mutation guarding it are
 now in place — see `KILL-LIST.md`.
 
-## Attribution and licensing
+## Licence
+
+This repo is MIT (`LICENSE`). Citing it: `CITATION.cff`.
+
+## Attribution and licensing of the corpus
 
 The corpus this operates on is **Vul4Py**, by Tan Bui, Ting Zhang, Ferdian
 Thung, Yunpeng Xiong, Penghao Jiang, Xin Zhou and David Lo (Singapore

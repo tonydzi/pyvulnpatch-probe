@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use pyvulnpatch-probe in research or software, please cite it as below."
+title: "pyvulnpatch-probe"
+type: software
+authors:
+  - family-names: Dziatkovskii
+    given-names: Anton
+    orcid: "https://orcid.org/0000-0001-7408-3054"
+    affiliation: "Palo Alto AI Research Lab"
+repository-code: "https://github.com/tonydzi/pyvulnpatch-probe"
+url: "https://github.com/tonydzi/pyvulnpatch-probe"
+abstract: >-
+  Audit layer for Python vulnerability-patching benchmarks: measures the advisory-id leak channel, the fix-date vs model-cutoff slice, hint ablation conditions, and the gap between an agent's self-reported verdict and the paired oracle.
